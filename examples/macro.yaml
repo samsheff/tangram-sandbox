@@ -45,7 +45,6 @@ styles:
         shaders:
             defines:
                 TILE_SCALE: 0.0002445
-                NORMALIZED_SHORT(x): (x * 32767.)
             blocks:
                 global: |
                     // Coord System
@@ -91,7 +90,7 @@ styles:
                                    1.-fract(brightness*9.0));
                     }
                 position: |
-                    v_pos = NORMALIZED_SHORT(a_position.xyz);
+                    v_pos = modelPosition().xyz;
     earth-hatch:
         base: polygons
         mix: tools 
