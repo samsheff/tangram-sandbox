@@ -155,9 +155,10 @@
     
     <script type="text/javascript">
     setTimeout(function() {
-        $('div.info').remove();
-        $('div#mz-bug').remove();
-    }, 10000);
+        removeElementsByClass('mz-bug-container');
+        removeElementsByClass('info');
+        removeElementsByClass('leaflet-control-attribution');
+    }, 3000);
     </script>
 
   </body>
