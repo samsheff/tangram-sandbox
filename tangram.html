@@ -152,6 +152,13 @@
     <script type="text/javascript">
       window.addEventListener("hashchange",function(){parent.postMessage(window.location.hash, "*")});
     </script>
+    
+    <script>
+    setTimeout(function() {
+        $('div.info').remove();
+        $('div#mz-bug').remove();
+    }, 3000);
+    </script>
 
   </body>
 </html>
